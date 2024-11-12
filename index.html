@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My potfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/6f7cf255-48e4-4e60-bf08-c0243ac2d04d-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Kirsty </span><br>From Uncommon</h1>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/POTFOLIO2.jpeg" alt="userimg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque 
+                        atque praesentium iusto, dolores voluptatibus dolorem libero illo 
+                        in molestiae distinctio. Labore corrupti modi consequatur 
+                        deserunt velit itaque, molestias corporis similique in qui.</p>
+                        
+                        <div class="tab-tittles">
+                            <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills" >
+                            <ul>
+                                <li><span>Wed Development</span><br>Wed app Development</li>
+                                <li><span>UI/UX </span><br>Designing Web/App interfaces</li>
+                                <li><span>DM</span><br> Markerting and Advertising</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>July2024</span><br>UI/UX Design crash course</li>
+                                <li><span>October2024 </span><br>Web Development crash course</li>
+                                <li><span>December2024</span><br> Digital marketing crash course</li>
+                                <li><span>June2025</span><br>Attachment</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>January2025</span><br>Specialisation</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services  -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, laboriosam?</p>
+                    <a href="#">learn more</a>
+
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, laboriosam?</p>
+                    <a href="#">learn more</a>
+
+                </div>
+                <div>
+                    <i class="fas fa-store"></i>
+                    <h2>Digital marketing</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, laboriosam?</p>
+                    <a href="#">learn more</a>
+
+                </div>
+
+            </div>
+        </div>
+     </div>
+     <!-- Portfolio  -->
+      <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="project1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from playstore</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="project2">
+                    <div class="layer">
+                    <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from playstore</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="project3">
+                    <div class="layer">
+                    <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from playstore</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            </div>
+            <a href="./pages/projects.html" class="btn">See more</a>
+        </div>
+      </div>
+      <!-- contact  -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                   <p<i class="fa-solid fa-envelope-circle-check"></i></i>kirstygudza3@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i></i>+263 775 210 240</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://zw.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Kirsty <i class="fas fa-heart"></i></p>
+        </div>
+       </div>
+
+
+    <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){  
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){  
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+   
+   </script>
+   <script>
+    var sidemenu= document .getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+   </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxTXNulyo_J-jluTVHiON8D93zmnhBAsgKMHkNovw6EaDO3qJUO131mTISvNATitAX9VA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            } ,5000)
+            form.reset()
+        })
+    
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
